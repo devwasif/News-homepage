@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    height: 100vh;
+    align-content: center;
+    justify-content: center;
+    overflow: scroll;
+}
+/* Navbar Style */
+    ul{
+        list-style: none;
+    }
+    nav{
+        padding: 5%;
+        align-items: center;
+        justify-content: space-between;
+        display: flex;
+    }
+    .nav-links{
+        display: none;
+    }
+    menu{
+        display: flex;
+        
+    }
+@media(min-width: 900px){
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+    }
+    .menu{
+        display: none;
+    }
+    .nav-links{
+        display: flex;
+        align-items: center;
+        gap: 2.5rem;
+    }
+    .nav-links li{
+        color: hsl(236, 13%, 42%);
+        cursor: pointer;
+    }
+    .nav-links li:hover{
+        color: hsl(5, 85%, 63%);
+    }
+}
+/* Container One Content */
+.container-one{
+    margin: 5% 5%;
+    overflow: hidden;   
+}
+.mobile-img img{
+    width: 100%;
+    object-fit: cover;
+}
+.container-one-text h1{
+    font-size: 2.5rem;
+    font-weight: 800;
+    padding: 10px 0px 10px 0px;
+    line-height: 2.6rem;
+    color: hsl(240, 100%, 5%);
+}
+.container-one-text p{
+    font-size: 15px;
+    padding: 0px 0px 10px 0px;
+    line-height: 1.5rem;
+    color: hsl(236, 13%, 42%);
+}
+.container-one-text button{
+    background-color:#F35D4F;
+    color: hsl(36, 100%, 99%);
+    border: 0px;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+    padding: 14px 28px;
+    margin-top: 10px; 
+}
+.container-one-text button:hover{
+    background-color: #00001A;
+}
+/* Container Two Content */
+.container-two{
+    background-color: #00001A;
+    color: white;
+    margin: 10% 5%;
+}
+.container-two-text{
+    padding: 5% 4%;
+}
+.container-two-text h2{
+    font-size: 2rem;
+    font-weight: 700;
+    color: #E6AF6E;
+}
+.container-two-text h4{
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+.container-two-text h4:hover{
+    color: #E6AF6E;
+}
+.container-two-text p{
+    color: hsl(0, 0%, 82%);
+    line-height: 1.5rem;
+}
+.container-two-text hr{
+    border: 0;
+    height: 1.7px;
+    background-color: hsl(236, 13%, 42%);
+}
+
+/* Container Three Content */
+
+.container-three{
+    margin: 5% 5%;
+}
+.box-content{
+    display: flex;
+    padding: 5% 0%;
+    flex-direction: row;
+}
+.box-content img{
+    width: 100%;
+}
+.box-text{
+    padding-left: 4%;
+    flex-basis: 100%;
+    align-items: center;   
+}
+.box-text h4{
+    padding: 8px 0px;
+}
+.box-text h4:hover{
+    color: hsl(5, 85%, 63%);
+}
+.box-text h3{
+    font-size: 2rem;
+    color: hsl(0, 0%, 71%);
+}
+.box-text p{
+    color: hsl(236, 13%, 42%);
+    font-size: 15px;
+}
+.attribution{
+    font-size: 14px;
+    margin: 0 5%;
+    text-align: center;
+    color: #00001A;
+}
+.attribution a{
+    text-decoration: none;
+    color: #F15E50;
+}
+@media(max-width: 899px){
+    .desktop-img{
+        display: none;
+    }
+}
+@media(min-width: 900px){
+    body{
+        max-width: 1440px;
+        margin: 0 auto;
+        position: relative;
+    }
+    .mobile-img{
+        display: none;
+    }
+    .desktop-img img{
+        width: 100%;
+        object-fit: cover;
+    }
+    .main-container{
+        display: flex;
+    }
+    .content-flex{
+        display: flex;
+    }
+    .container-three{
+        display: flex;
+    }
+    .container-one, .container-two, .container-three{
+        margin: 20px;
+        padding: 0;
+    }
+    .content-flex{
+        margin-top: 20px;
+    }
+    .container-one-heading{
+        padding-right: 50px;
+    }
+    .container-one-heading h1{
+        margin: 0;
+        font-size: 4rem;
+        line-height: 3.8rem;
+        padding: 0 46px 0 0;
+    }
+    .container-one-paragraph button{
+        margin-top: 20px;
+        padding: 16px 34px;
+    }
+    .container-two-text{
+        padding: 8% 4%;
+    }
+    .box-content{
+        justify-content: center;
+        align-items: center;
+        align-items: center;
+        align-self: center;
+        padding: 0px;
+    }
+    #middle-box{
+        padding: 0px  50px;
+    }
+    .box-text h4{
+        padding: 20px 0px;
+    }
+    .attribution{
+        text-align: center;
+        margin-top: 40px;
+        font-size: 15px;
+    }
+
+
+}
